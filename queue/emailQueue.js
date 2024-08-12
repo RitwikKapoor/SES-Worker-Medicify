@@ -48,9 +48,9 @@ const emailWorker = new Worker(
       port: process.env.REDIS_PORT,
       username: process.env.REDIS_USERNAME,
       password: process.env.REDIS_PASSWORD,
-      tls: {
-        rejectUnauthorized: false,
-      },
+      // tls: {
+      //   rejectUnauthorized: false,
+      // },
     },
     limiter: {
       max: 2,
